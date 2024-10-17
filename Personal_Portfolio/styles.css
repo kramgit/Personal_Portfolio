@@ -1,0 +1,162 @@
+/* Reset some default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #000; /* Black background */
+    color: #f5d47b; /* Gold text */
+}
+
+/* Header */
+header {
+    background: #000; /* Black background */
+    color: #f5d47b; /* Gold text */
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #f5d47b; /* Gold border */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/* Navigation menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #f5d47b; /* Gold text */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #e6c94a; /* Slightly lighter gold on hover */
+}
+
+/* Section and Content Styling */
+.about {
+    text-align: center; /* Center text */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #222; /* Dark gray background */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.profile-image {
+    display: block;
+    max-width: 200px; /* Adjust width as necessary */
+    margin: 20px auto; /* Centers the image */
+    border-radius: 50%; /* Makes the image circular */
+    border: 5px solid #f5d47b; /* Gold border */
+}
+
+.divider, .custom-divider {
+    height: 1px; /* Thickness of the divider */
+    width: 50%; /* Width of the divider */
+    background-color: #f5d47b; /* Gold color */
+    margin: 20px auto; /* Centers the divider */
+}
+
+
+/* Project Cards */
+.projects {
+    text-align: center; /* Center text */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.project {
+    display: inline-block;
+    width: 100%; /* Ensure the project cards stack on top of each other */
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #333; /* Darker background for project cards */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center; /* Center text and button */
+}
+
+/* Contact Form */
+.contact {
+    text-align: center; /* Center text */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers form elements */
+}
+
+.contact form input,
+.contact form textarea {
+    width: 80%; /* Make input fields wider */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #f5d47b; /* Gold border */
+    border-radius: 5px;
+    background-color: #111;
+    color: #f5d47b;
+}
+
+.contact form button {
+    padding: 10px 20px;
+    background-color: #f5d47b;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000; /* Black background for footer */
+    color: #f5d47b; /* Gold text for footer */
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .projects .project {
+        width: 100%;
+    }
+
+    .contact form {
+        width: 100%;
+    }
+}
